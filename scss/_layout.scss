@@ -1,0 +1,67 @@
+
+@import 'mixins';
+@import 'elements';
+
+body {
+    background:$off-white;
+    color:$second-color;  
+    margin:0;
+}
+
+.day-header {
+    background:$white;
+    color:$second-color;
+    width:auto;
+    height:100vh;
+}
+
+.max
+{
+  min-height:100vh;
+  max-width: 140vw;
+  overflow: hidden;
+}
+
+.grid {
+  padding: 10px;
+  box-sizing: border-box;
+  }
+  @at-root {
+    [class*='container__col-'] {
+      margin: 0 5%;
+      padding:5%;
+      display: flex;
+    }
+  }
+
+$grid_bp-sm: 576;
+$grid_bp-md: 768;
+$grid_bp-lg: 992;
+$grid_bp-xl: 1080;
+$grid_cols: 12;
+
+$map-grid-props: (
+        '': 0,
+        '-sm': $grid_bp-sm,
+        '-md': $grid_bp-md,
+        '-lg': $grid_bp-lg,
+        '-xl': $grid_bp-xl
+);
+
+.grid {
+  max-width: $grid_bp-md * 1px;
+  margin: auto 0;
+  &--fluid {
+    margin: 0;
+    max-width: 100%;
+  }
+  &_row {
+    display: flex;
+    margin:0 5%;
+    flex-wrap: wrap;
+    width: calc(100%-10%);
+  }
+  @each $modifier , $breakpoint in $map-grid-props {
+    @include create-col-classes($modifier, $grid_cols, $breakpoint);
+  }
+}

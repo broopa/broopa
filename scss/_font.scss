@@ -1,0 +1,45 @@
+@font-face {
+  font-family: Comforta;
+  src: url(../fonts/Comfortaa-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+  }
+
+$font-titles: 'Comforta', sans-serif;
+$font-body: 'Roboto', sans-serif;
+
+h1{
+    font-size:4em;
+    font-family:$font-titles;
+    color:$second-color;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+h2{
+  font-size:3em;
+  font-family:$font-titles;
+  color:$second-color;
+}
+
+h3{
+  font-size:2em;
+  font-family:$font-titles;
+  color:$second-color;
+}
+
+p{
+    font-size:1.5em;
+    font-family:$font-body;
+    color:$second-color;
+}
+
+.center-text {
+    text-align:center;
+}
+
+footer p {
+  font-size:16px;
+}
