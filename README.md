@@ -1,9 +1,4 @@
-# Custom Personal Website
 
-This site was built to use 0 JS for any functionality and animation to show my love of basic CSS/HTML. 
-
-### Built Using
-SASS/CSS3, HTML5, PHP (For form mailer)
 
 <!--
 **broopa/broopa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
