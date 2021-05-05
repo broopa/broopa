@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -201,10 +204,10 @@
         <section class="grid">
         <section class="col-desk-12">
         <h2>Get in Touch</h2>
-        <form>
-            <p>Hi, my name is <input class="form-fields" type="text" placeholder="your name"> & I am reaching out to you to talk about <input placeholder="my project" type="text" class="form-fields">. You can reach me at <input type="email" placeholder="my email" class="form-fields">.
+        <form action="mail_handler.php" method="post">
+            <p>Hi, my name is <input class="form-fields" type="text" name="name" placeholder="your name"> & I am reaching out to you to talk about <input placeholder="your project" name="project" type="text" class="form-fields">. You can reach me at <input name="email" type="email" placeholder="your email" class="form-fields">.
             </p>
-            <button type="submit" class="form-button">Send</button>
+            <button type="submit" name="submit" value="Submit" class="form-button">Send</button>
         </form>
         </section>
     </section>

@@ -149,7 +149,7 @@
 
 .social-list {
   display: inline-block;
-  float: left;
+  
   width:100%;
   list-style: none;
   margin-block-start: 0em;
@@ -176,6 +176,14 @@ input:focus {
   & :focus-visible {
     outline:0;
   }}
+
+  .form-button {
+    background:$main-color;
+    color:$second-color;
+    padding:1em 4em;
+    border:none;
+    font-family:$font-titles;
+  }
 
 @keyframes slide {
     from {
