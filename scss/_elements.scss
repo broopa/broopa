@@ -66,11 +66,50 @@
 .skillbar {
   background:$white;
   width:100%;
+  margin:0em 0em 1.5em 0em;
 }
-.html {width: 90%; background-color: $main-color;}
-.css {width: 80%; background-color: $main-color;}
-.js {width: 65%; background-color: $main-color;}
-.php {width: 60%; background-color: $main-color;}
+
+.skillset-bar {
+  margin:.5em 0em;
+}
+
+.html {
+  width: 90%; 
+  background-color: $main-color;
+}
+.css {
+  width: 90%; 
+  background-color: $main-color;
+}
+.sass {
+  width: 65%; 
+  background-color: $main-color;
+}
+.wordpress {
+  width: 80%; 
+  background-color: $main-color;
+}
+.php {
+  width: 60%; 
+  background-color: $main-color;
+}
+.bootstrap {
+  width: 90%; 
+  background-color: $main-color;
+}
+.react {
+  width: 20%; 
+  background-color: $main-color;
+}
+.js {
+  width: 25%; 
+  background-color: $main-color;
+}
+.sql {
+  width: 25%; 
+  background-color: $main-color;
+}
+
 
 .social-list {
   display: inline-block;
