@@ -30,7 +30,6 @@
     opacity:0;
     animation: slide 65s linear infinite;
 }
-  
 .cloud-2 {
     margin-top: -130px;
     position: relative;
@@ -41,7 +40,6 @@
     animation: slide 40s linear infinite;
     animation-delay: 20s;
 }
-
 .cloud-3 {
     margin-top: -70px;
     position: relative;
@@ -61,6 +59,44 @@
     opacity:0;
     animation: slide 40s linear infinite;
     animation-delay: 10s;
+}
+.cloud-5 {
+  margin-top: -70px;
+  position: relative;
+  width:150px;
+  height:150px;
+  opacity:0;
+  animation: slide 35s linear infinite;
+  animation-delay: 25s;
+}
+.cloud-6 {
+  margin-top: -180px;
+  position: relative;
+  width:75px;
+  height:75px;
+  z-index: 11;
+  opacity:0;
+  animation: slide 40s linear infinite;
+  animation-delay: 40s;
+}
+.cloud-7 {
+  margin-top: -70px;
+  position: relative;
+  width:250px;
+  height:250px;
+  opacity:0;
+  animation: slide 55s linear infinite;
+  animation-delay: 35s;
+}
+.cloud-8 {
+  margin-top: -180px;
+  position: relative;
+  width:100px;
+  height:100px;
+  z-index: 11;
+  opacity:0;
+  animation: slide 30s linear infinite;
+  animation-delay: 50s;
 }
 
 .skillbar {
@@ -124,6 +160,22 @@
   padding-right:15px;
 } }
   
+.form-fields {
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid $off-white;
+  line-height: 1.5;
+  font-size: inherit;
+  color: $off-white;
+}
+
+input:focus {
+  outline:0;
+  border: none;
+  border-bottom: 2px solid $main-color;
+  & :focus-visible {
+    outline:0;
+  }}
 
 @keyframes slide {
     from {

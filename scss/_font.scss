@@ -46,6 +46,10 @@ p{
   font-family:$font-body;
 }
 
+::placeholder {
+  color:$main-color;
+}
+
 footer p {
   font-size:16px;
 }

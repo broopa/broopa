@@ -15,11 +15,33 @@ body {
     height:100vh;
 }
 
-.max
-{
+.alt-bg {
+  background:$second-color;
+  margin:4em 0 0 0;
+  padding:2em 0;
+& p, h2, a {
+  color:$white;
+}}
+
+.max {
   min-height:100vh;
   max-width: 140vw;
   overflow: hidden;
+}
+
+.max-width {
+  width:100%;
+  overflow: hidden;
+}
+
+footer {
+  background:$second-color;
+  width:100%;
+  overflow: hidden;
+  padding: .5em 0;
+  & p, a, a:visited {
+    color:$white;
+  }
 }
 
 .grid {
@@ -28,8 +50,8 @@ body {
   }
   @at-root {
     [class*='container__col-'] {
-      margin: 0 5%;
-      padding:5%;
+      margin: 0 4em;
+      padding:4em;
       display: flex;
     }
   }
