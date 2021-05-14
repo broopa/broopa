@@ -24,7 +24,7 @@ body {
 }}
 
 .max {
-  min-height:100vh;
+  min-height:90vh;
   max-width: 140vw;
   overflow: hidden;
 }
@@ -113,3 +113,10 @@ $mob-gutter: (
   }
 }
 
+
+@media screen and (max-width:620px){
+  .max {
+    min-height:70vh;
+    height:90vh;
+  }
+  } 

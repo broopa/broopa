@@ -1,0 +1,17 @@
+.form-button {
+    background:$main-color;
+    color:$second-color;
+    padding:1em 4em;
+    border:none;
+    text-decoration: none;
+    font-family:$font-titles;
+    font-size: 18px;
+   &:hover {
+      background:$off-white;
+      color:$second-color;
+      animation: float 8s ease-in-out infinite;
+}}
+
+.header-button {
+    margin-top:1.5em;
+}

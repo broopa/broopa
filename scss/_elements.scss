@@ -169,6 +169,11 @@
   color: $off-white;
 }
 
+textarea {
+  font-family:$font-body;
+  font:inherit;
+}
+
 input:focus {
   outline:0;
   border: none;
@@ -177,13 +182,6 @@ input:focus {
     outline:0;
   }}
 
-  .form-button {
-    background:$main-color;
-    color:$second-color;
-    padding:1em 4em;
-    border:none;
-    font-family:$font-titles;
-  }
 
 @keyframes slide {
     from {

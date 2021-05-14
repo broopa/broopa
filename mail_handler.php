@@ -1,20 +1,40 @@
-<?php 
-if(isset($_POST['submit'])){
-    $to = "ian@broopa.com";
-    $from = $_POST['email']; 
-    $name = $_POST['name'];
-    $subject = "Form Submission from Broopa";
-    $message = $name . " wrote the following:" . "\n\n" . $_POST['project'];
+<?php
 
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$project,$headers);
-    if ($_POST['submit']) {
-        if (mail ($to, $subject, $message, $from)) {
-            echo 'header('Location: thank_you.php');
-        } else {
-            echo '<p>Something went wrong, go back and try again!</p>';
-        }
-    }
-    }
+$to = "ian@broopa.com";
+$from = $_POST['email']; 
+$name = $_POST['name'];
+$subject = "Form Submission from Broopa";
+$message = $name . " wrote the following:" . "\n\n" . $_POST['project_name'] . $_POST['project_desc'] . "Please contact me back at:" . $from;
+
+  use PHPMailer\PHPMailer\PHPMailer;
+  use PHPMailer\PHPMailer\Exception;
+  require 'PHPMailer/src/Exception.php';
+  require 'PHPMailer/src/PHPMailer.php';
+  require 'PHPMailer/src/SMTP.php';
+
+  $mail = new PHPMailer();
+  $mail->IsSMTP();
+
+  $mail->SMTPDebug  = 0;  
+  $mail->SMTPAuth   = TRUE;
+  $mail->SMTPSecure = "tls";
+  $mail->Port       = 587;
+  $mail->Host       = "smtp.gmail.com";
+  $mail->Username   = "website@broopa.com";
+  $mail->Password   = "PASSWORD_HIDDEN";
+
+  $mail->IsHTML(true);
+  $mail->AddAddress($to);
+  $mail->SetFrom($from, $name);
+  $mail->AddReplyTo($from, $name);
+  $mail->Subject = $subject;
+  $content = $message;
+
+  $mail->MsgHTML($content); 
+  if(!$mail->Send()) {
+    echo "Error while sending Email.";
+    var_dump($mail);
+  } else {
+    header("Location: /thank_you.html");;
+  }
 ?>
