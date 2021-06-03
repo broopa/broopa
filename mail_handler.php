@@ -34,8 +34,7 @@ $message = $name . " wrote the following:" . "\n\n" . htmlspecialchars($_POST['p
 
   $mail->MsgHTML($content); 
   if(!$mail->Send()) {
-    echo "Error while sending Email.";
-    var_dump($mail);
+    header("Location: /error.html");
   } else {
     header("Location: /thank_you.html");;
   }
