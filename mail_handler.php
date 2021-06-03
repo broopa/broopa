@@ -2,9 +2,11 @@
 
 $to = "ian@broopa.com";
 $from = $_POST['email']; 
-$name = $_POST['name'];
+$fromSanitized = filter_var($from, FILTER_SANITIZE_EMAIL);
+$name = htmlspecialchars($_POST['name']);
+$cleanname = htmlspecialchars($name);
 $subject = "Form Submission from Broopa";
-$message = $name . " wrote the following:" . "\n\n" . $_POST['project_name'] . $_POST['project_desc'] . "Please contact me back at:" . $from;
+$message = $name . " wrote the following:" . "\n\n" . htmlspecialchars($_POST['project_name']) . htmlspecialchars($_POST['project_desc']) . "Please contact me back at:" . $fromSanitized;
 
   use PHPMailer\PHPMailer\PHPMailer;
   use PHPMailer\PHPMailer\Exception;
@@ -25,8 +27,8 @@ $message = $name . " wrote the following:" . "\n\n" . $_POST['project_name'] . $
 
   $mail->IsHTML(true);
   $mail->AddAddress($to);
-  $mail->SetFrom($from, $name);
-  $mail->AddReplyTo($from, $name);
+  $mail->SetFrom($fromSanitized, $name);
+  $mail->AddReplyTo($fromSanitized, $name);
   $mail->Subject = $subject;
   $content = $message;
 
