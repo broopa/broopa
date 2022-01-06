@@ -229,7 +229,7 @@
     </section>
     <footer>
         <section class="grid_col-sm-12">
-            <p class="center-text">2021 <a href="https://broopa.com">broopa.com</a></p>
+            <p class="center-text">Copyright ©2021 Ian Albahae</p>
         </section>
     </footer>
 </body>
