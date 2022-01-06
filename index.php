@@ -224,12 +224,6 @@
     <section class="max-width alt-bg">
         <section class="grid">
         <section class="col-desk-12">
-        <h2>Get in Touch</h2>
-        <form action="mail_handler.php" method="post">
-            <p>Hey Ian, my name is <input class="form-fields" type="text" name="name" placeholder="your name"> & you can reach me at <input name="email" type="email" placeholder="your email" class="form-fields">.<br>I am reaching out to you to talk about <input placeholder="your project" name="project_name" type="text" class="form-fields">, which is a <br><textarea placeholder="tell me a little about your project" name="project_desc" rows="1" cols="50" type="text" class="form-fields"></textarea>. 
-            </p>
-            <button type="submit" name="submit" value="Submit" class="form-button">Send</button>
-        </form>
         </section>
     </section>
     </section>
