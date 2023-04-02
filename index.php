@@ -15,17 +15,17 @@
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="canonical" href="https://broopa.com/">
+<link rel="canonical" href="https://albahae.dev/">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ian Albahae Front-End Developer & Web Designer">
 <meta property="og:description" content="A front-end developer & designer based in Atlanta Georgia with more than 15 years of experience">
-<meta property="og:url" content="https://broopa.com/">
+<meta property="og:url" content="https://albahae.dev/">
 <meta property="og:site_name" content="Ian Albahae Front-End Developer & Web Designer">
 <title>Ian Albahae Front-End Developer & Web Designer</title>
 <meta name="description" content="A front-end developer & designer based in Atlanta Georgia with more than 15 years of experience.">
 <link rel="shortcut icon" type="image" href="images/favicon.png"/>
-<link rel="stylesheet" href="css/main.css" type="text/css" />
+<link rel="stylesheet" href="css/main.min.css" type="text/css" />
 
 </head>
 
@@ -110,18 +110,19 @@
         <section class="col-desk-6 col-mob-4">
         <h2>About Me</h2>
         <p>
-            I am a front-end developer & designer based in Atlanta Georgia with more than 15 years of experience. Projects I have worked on range from HIPPA compliant testing platforms to simple websites & everything in between. 
+            I am a front-end developer & designer based in Atlanta Georgia with more than 15 years of experience. During my time as a developer I have worked on range websites & applications that include custom CMSs, out of the box CMSs like WordPress & Drupal, static websites using React & Typescript, & a HIPPA compliant testing platform. 
         </p>
         <p>
-            As a developer I strive to keep the web as simple as possible. While javascript has its place I feel it is often over used in basic web development. Creating my personal site I took to the challenge of using absolutly no javascript to create an animated & modern website. 
+            My early career was made with the LAMP stack, but as the internet continues to move forward I am focusing on using that knowledge to add JavaScript frameworks as the front-end solution. 
         </p>
         <p>
-            WordPress is my bread & butter where I spend most of my work time. But as a senior front-end developer I have also overseen teams & projects from conception to completion. Looking to break out of my current roots I embarked into the world of React where I am finding a new passion. 
+            As a senior developer I strive to pass on as much knowledge as I can to those just starting out in their careers. Overseeing teams of developers is something I have a great passion for, watching people grow thru code reviews & ultimately learning from them as well. The need to keep learning & solve problems is what development is all about & why I love being able to call myself a developer.
         </p>
+
         <h3>Find Me Here</h3>
         <ul class="social-list">
             <li>
-                <a href="https://twitter.com/broopa_dev" target="_blank"><svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg" width="40">
+                <a href="https://twitter.com/albahae_dev" target="_blank"><svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg" width="40">
                     <defs>
                     </defs>
                     <path d="
@@ -196,17 +197,17 @@
                 </section>
             </section>
             <section>
-                <h3 class="skillset-title">React/Redux</h3>
+            <h3 class="skillset-title">Javascript</h3>
                 <section class="skillbar">
-                    <section class="grid_col-sm-12 react">
+                    <section class="grid_col-sm-12 js">
                         <p class="skillset-bar">&nbsp;</p>
                     </section>
                 </section>
             </section>  
             <section>
-                <h3 class="skillset-title">Javascript</h3>
+            <h3 class="skillset-title">React/Redux</h3>
                 <section class="skillbar">
-                    <section class="grid_col-sm-12 js">
+                    <section class="grid_col-sm-12 react">
                         <p class="skillset-bar">&nbsp;</p>
                     </section>
                 </section>
@@ -229,7 +230,7 @@
     </section>
     <footer>
         <section class="grid_col-sm-12">
-            <p class="center-text">Copyright ©2021 Ian Albahae</p>
+            <p class="center-text">Copyright ©2023 Ian Albahae</p>
         </section>
     </footer>
 </body>
